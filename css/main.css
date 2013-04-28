@@ -1,0 +1,38 @@
+body {
+  background: #eeeeee;
+  padding: 0;
+  margin: 0; }
+
+.heart {
+  background-image: url("../img/heart_400.png");
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 400px;
+  margin-left: -200px;
+  margin-top: -200px;
+  position: fixed;
+  top: 50%;
+  left: 50%; }
+
+.endless {
+  background-image: url("../img/endless_400.png");
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 400px;
+  margin-left: -200px;
+  margin-top: -200px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-animation-name: rotateThis;
+  -webkit-animation-duration: 14s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear; }
+
+/*rotation*/
+@-webkit-keyframes rotateThis {
+  from {
+    -webkit-transform: rotate(360deg); }
+
+  to {
+    -webkit-transform: rotate(0deg); } }
